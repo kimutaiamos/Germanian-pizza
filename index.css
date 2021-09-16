@@ -10,8 +10,8 @@
     overflow-x: hidden;
     color: #ffffff;
   }
-  #landing {
-    background-image: url(../images/pizza2.jpeg);
+  .landing {
+    background-image: url(img/56933159.jpeg);
     background-size: cover;
     text-align: center;
     height: 100vh;
@@ -19,3 +19,7 @@
     font-size: 50px;
     font-family: cursive;
   }
+  #land-text {
+    padding-top: 200px;
+  }
+  
