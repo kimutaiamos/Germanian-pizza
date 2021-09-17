@@ -18,7 +18,8 @@ $(function () {
                 n,
                 total
             };
-        };
+        
+    
         let price, totalPrice;
         switch (flavour) {
             case flavour = "vegtikka":
