@@ -10,6 +10,13 @@
     overflow-x: hidden;
     color: #ffffff;
   }
+  .menu {
+    margin-top: 60px;
+    text-align: center;
+    height:100vh;
+    font-family: sans-serif;
+    font-size: 24px;
+  }
   .landing {
     background-image: url(img/56933159.jpeg);
     background-size: cover;
@@ -22,7 +29,7 @@
   #land-text {
     padding-top: 200px;
   }
-  li{
+  .li{
     display: inline;
     margin-right: 20px;
   }
@@ -35,4 +42,79 @@
     font-size: 24px;
     font-family: system-ui, serif;
   }
+  
+
+.order-summary h1,
+.summary,
+.contact {
+  color: #000;
+  font-family: 'Love Ya Like A Sister', cursive;
+  margin-top: 30px;
+}
+
+input[type="email"] {
+  background: transparent;
+  border: 1px solid #ffffff;
+  padding: .8em .7em;
+  border-radius: 20px;
+  outline: none !important;
+  font-size: 14px;
+}
+
+.click-me {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.get-pizza {
+  margin-top: 40px;
+}
+
+.click-me,
+button[type=submit],
+.deliver,
+.delivernot {
+  color: #fff;
+  text-decoration: none;
+  text-transform: uppercase;
+  display: inline-block;
+  letter-spacing: 2px;
+  background-color: #16140c;
+  outline: none;
+  padding: 12.5px 13px;
+  border: none;
+  border-radius: 33px;
+  font-size: 14px;
+}
+
+.deliver,
+.delivernot {
+  margin: 10px;
+}
+
+#order-pizza {
+  padding: 20px 50px 20px 50px;
+  font-family: 'Love Ya Like A Sister', cursive;
+}
+
+.order-overlay {
+  height: inherit;
+  padding: 20px;
+  background-color:rgb(rgb(97, 90, 90), rgb(105, 114, 105), rgb(94, 94, 104));
+  border-radius: 20px;
+}
+
+.checkout {
+  border-radius: 20px;
+  margin-top: 20px;
+}
+
+#list {
+  color: #000;
+}
+
+.pizz {
+  color: lawngreen;
+}
+
   
