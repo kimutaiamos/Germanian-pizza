@@ -1,93 +1,153 @@
 $(function () {
-    $('.summary').hide();
-    $('.cdata-overlay').hide();
-    $("#checkout").click(function () {
-        let flavour = $(".flavour option:selected").val();
-        let size = $("#size option:selected").val();
-        let crust = $("#crust option:selected").val();
-        let topping = $("#toppings option:selected").val();
-        let number = $("#number").val();
-        console.log(size);
+            $('.summary').hide();
+            $('.cdata-overlay').hide();
+            $("#checkout").click(function () {
+                        let flavour = $(".flavour option:selected").val();
+                        let size = $("#size option:selected").val();
+                        let crust = $("#crust option:selected").val();
+                        let topping = $("#toppings option:selected").val();
+                        let number = $("#number").val();
+                        console.log(size);
 
-        let order = (f, s, c, t, n, total) => {
-            return {
-                f,
-                s,
-                c,
-                t,
-                n,
-                total
-            };
-        
-        let price, totalPrice;
+                        let order = (f, s, c, t, n, total) => {
+                                return {
+                                    f,
+                                    s,
+                                    c,
+                                    t,
+                                    n,
+                                    total
+                                };
+
+     let price, totalPrice;
         switch (flavour) {
             case flavour = "vegtikka":
-                switch (size) {
-                    case size = "regular":
-                        price = 300;
-                        if (crust === "thin") {
-                            totalPrice = (price * number) + 100;
-                        } else if (crust === "thick") {
-                            totalPrice = (price * number) + 180;
-                        } else if (crust === "flatbread") {
-                            totalPrice = (price * number) + 200;
-                        } else {
-                            totalPrice = (price * number) + 250;
-                        }
-                        break;
-                        case size = "medium":
-                        price = 600;
-                        if (crust === "thin") {
-                            totalPrice = (price * number) + 100;
-                        } else if (crust === "thick") {
-                            totalPrice = (price * number) + 180;
-                        } else if (crust === "flatbread") {
-                            totalPrice = (price * number) + 200;
-                        } else {
-                            totalPrice = (price * number) + 250;
-                        }
-                        break;
-                        case size = "large":
-                        price = 1200;
-                        if (crust === "thin") {
-                            totalPrice = (price * number) + 100;
-                        } else if (crust === "thick") {
-                            totalPrice = (price * number) + 180;
-                        } else if (crust === "flatbread") {
-                            totalPrice = (price * number) + 200;
-                        } else {
-                            totalPrice = (price * number) + 250;
-                        }
-                        break;
-                }
-                break;
-                case flavour = "chickentikka":
-                switch (size) {
-                    case size = "regular":
-                        price = 300;
-                        if (crust === "thin") {
-                            totalPrice = (price * number) + 100;
-                        } else if (crust === "thick") {
-                            totalPrice = (price * number) + 180;
-                        } else if (crust === "flatbread") {
-                            totalPrice = (price * number) + 200;
-                        } else {
-                            totalPrice = (price * number) + 250;
-                        }
-                        break;
-                    }
-                    case flavour = "chickentikka":
-                switch (size) {
-                    case size = "medium":
-                        price = 300;
-                        if (crust === "thin") {
-                            totalPrice = (price * number) + 100;
-                        } else if (crust === "thick") {
-                            totalPrice = (price * number) + 180;
-                        } else if (crust === "flatbread") {
-                            totalPrice = (price * number) + 200;
-                        } else {
-                            totalPrice = (price * number) + 250;
-                        }
-                        break;
-    
+            switch (size) {
+             case size = "regular":
+             price = 300;
+                if (crust === "thin") {
+                  totalPrice = (price * number) + 100;
+                     } else if (crust === "thick") {
+                    totalPrice = (price * number) + 180;
+                         } else if (crust === "flatbread") {
+                                                    totalPrice = (price * number) + 200;
+                                                } else {
+                                                    totalPrice = (price * number) + 250;
+                                                }
+                                                break;
+                                            case size = "medium":
+                                                price = 600;
+                                                if (crust === "thin") {
+                                                    totalPrice = (price * number) + 100;
+                                                } else if (crust === "thick") {
+                                                    totalPrice = (price * number) + 180;
+                                                } else if (crust === "flatbread") {
+                                                    totalPrice = (price * number) + 200;
+                                                } else {
+                                                    totalPrice = (price * number) + 250;
+                                                }
+                                                break;
+                                            case size = "large":
+                                                price = 1200;
+                                                if (crust === "thin") {
+                                                    totalPrice = (price * number) + 100;
+                                                } else if (crust === "thick") {
+                                                    totalPrice = (price * number) + 180;
+                                                } else if (crust === "flatbread") {
+                                                    totalPrice = (price * number) + 200;
+                                                } else {
+                                                    totalPrice = (price * number) + 250;
+                                                }
+                                                break;
+                                        }
+                                        break;
+                                    case flavour = "chickentikka":
+                                        switch (size) {
+                                            case size = "regular":
+                                                price = 300;
+                                                if (crust === "thin") {
+                                                    totalPrice = (price * number) + 100;
+                                                } else if (crust === "thick") {
+                                                    totalPrice = (price * number) + 180;
+                                                } else if (crust === "flatbread") {
+                                                    totalPrice = (price * number) + 200;
+                                                } else {
+                                                    totalPrice = (price * number) + 250;
+                                                }
+                                                break;
+                                        }
+                                        case flavour = "chickentikka":
+                                            switch (size) {
+                                                case size = "medium":
+                                                    price = 300;
+                                                    if (crust === "thin") {
+                                                        totalPrice = (price * number) + 100;
+                                                    } else if (crust === "thick") {
+                                                        totalPrice = (price * number) + 180;
+                                                    } else if (crust === "flatbread") {
+                                                        totalPrice = (price * number) + 200;
+                                                    } else {
+                                                        totalPrice = (price * number) + 250;
+                                                    }
+                                                    break;
+                                            }
+                                            case flavour = "chickentikka":
+                                                switch (size) {
+                                                    case size = "large":
+                                                        price = 300;
+                                                        if (crust === "thin") {
+                                                            totalPrice = (price * number) + 100;
+                                                        } else if (crust === "thick") {
+                                                            totalPrice = (price * number) + 180;
+                                                        } else if (crust === "flatbread") {
+                                                            totalPrice = (price * number) + 200;
+                                                        } else {
+                                                            totalPrice = (price * number) + 250;
+                                                        }
+                                                        break;
+                                                }
+                                                case flavour = "peri-peri chicken":
+                                                    switch (size) {
+                                                        case size = "regular":
+                                                            price = 300;
+                                                            if (crust === "thin") {
+                                                                totalPrice = (price * number) + 100;
+                                                            } else if (crust === "thick") {
+                                                                totalPrice = (price * number) + 180;
+                                                            } else if (crust === "flatbread") {
+                                                                totalPrice = (price * number) + 200;
+                                                            } else {
+                                                                totalPrice = (price * number) + 250;
+                                                            }
+                                                            break;
+                                                    }
+                                                    case flavour = "peri-peri chicken":
+                                                        switch (size) {
+                                                            case size = "medium":
+                                                                price = 300;
+                                                                if (crust === "thin") {
+                                                                    totalPrice = (price * number) + 100;
+                                                                } else if (crust === "thick") {
+                                                                    totalPrice = (price * number) + 180;
+                                                                } else if (crust === "flatbread") {
+                                                                    totalPrice = (price * number) + 200;
+                                                                } else {
+                                                                    totalPrice = (price * number) + 250;
+                                                                }
+                                                                break;
+                                                        }
+                                                        case flavour = "peri-peri chicken":
+                                                            switch (size) {
+                                                                case size = "large":
+                                                                    price = 300;
+                                                                    if (crust === "thin") {
+                                                                        totalPrice = (price * number) + 100;
+                                                                    } else if (crust === "thick") {
+                                                                        totalPrice = (price * number) + 180;
+                                                                    } else if (crust === "flatbread") {
+                                                                        totalPrice = (price * number) + 200;
+                                                                    } else {
+                                                                        totalPrice = (price * number) + 250;
+                                                                    }
+                                                                    break;
+                                                            }
