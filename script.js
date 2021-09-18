@@ -61,3 +61,33 @@ $(function () {
                         break;
                 }
                 break;
+                case flavour = "chickentikka":
+                switch (size) {
+                    case size = "regular":
+                        price = 300;
+                        if (crust === "thin") {
+                            totalPrice = (price * number) + 100;
+                        } else if (crust === "thick") {
+                            totalPrice = (price * number) + 180;
+                        } else if (crust === "flatbread") {
+                            totalPrice = (price * number) + 200;
+                        } else {
+                            totalPrice = (price * number) + 250;
+                        }
+                        break;
+                    }
+                    case flavour = "chickentikka":
+                switch (size) {
+                    case size = "medium":
+                        price = 300;
+                        if (crust === "thin") {
+                            totalPrice = (price * number) + 100;
+                        } else if (crust === "thick") {
+                            totalPrice = (price * number) + 180;
+                        } else if (crust === "flatbread") {
+                            totalPrice = (price * number) + 200;
+                        } else {
+                            totalPrice = (price * number) + 250;
+                        }
+                        break;
+    
