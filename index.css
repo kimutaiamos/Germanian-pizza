@@ -115,4 +115,41 @@ button[type=submit],
 .pizz {
   color: lawngreen;
 }
+@media (max-width: 740px) {
+
+  html,
+  body,
+  header,
+  .view {
+    height: 1000px;
+    overflow-x: hidden;
+  }
+
+  #push {
+    padding-top: 40%;
+  }
+  .karibu-txt {
+    margin-top: 50px;
+  }
+  .menu-overlay {
+    width: 100%;
+    height: inherit;
+    background-color: rgba(0, 0, 0, 0.7);
+  }
+  .karibu-img {
+    margin-left: 20px;
+    margin-bottom: 10px;
+    height: 300px;
+    width: 270px;
+  }
+
+  .welcome {
+    padding-top: 10px;
+  }
+
+  .cdata {
+    padding: 10px 5px 10px 5px;
+  }
+
+}
   
