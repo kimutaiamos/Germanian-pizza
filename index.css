@@ -10,7 +10,7 @@ body {
   color: #ffffff;
 }
 #menu {
-  background-color:lightgray;
+  background-color:lightpink;
   margin-top: 60px;
   text-align: center;
   height:100vh;
@@ -25,7 +25,6 @@ body {
   height: 100vh;
   width: 100%;
   font-size: 50px;
-  font-family: cursive;
 }
 #land-text {
   padding-top: 200px;
@@ -53,6 +52,7 @@ li {
   color: #000;
   font-family: 'Love Ya Like A Sister', cursive;
   margin-top: 30px;
+  display: none;
 }
 
 input[type="email"] {
@@ -103,7 +103,7 @@ button[type=submit],
 .order-overlay {
   height: inherit;
   padding: 20px;
-  background-color:lightgray;
+  background-color:lightpink;
   border-radius: 20px;
 }
 
